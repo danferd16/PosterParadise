@@ -1,0 +1,364 @@
+.userIcon {
+    color:rgba(255,255,255,.50); 
+    font-size:1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.userIcon:hover {
+    color:rgba(255,255,255,.75); 
+}
+
+.userIcon.active {
+    color:rgba(255,255,255,1); 
+}
+
+.shopContent{
+    height: auto;
+}
+
+.shopContent {
+    min-height: 100%;
+    height: 50%;
+    width: 50%;
+}
+
+.shopSidebar {
+    width: 200px;
+    height: 100%;
+    box-shadow: 5px 0px 5px rgba(0,0,0,.2);
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 6.8vh;
+    overflow-y: auto;
+    
+}
+
+.sidebarOptions {
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.sidebarOptions li a{
+    cursor: pointer;
+}
+
+.sidebarHeader {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebarOptionSet {
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebarCategory {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cart_section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cart_contents {
+    width: 65%;
+}
+
+.cart_item {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 1rem 0 1rem 3rem;
+    padding: 2% 0;
+}
+
+.checkout_container{
+    height: fit-content;
+    width: 30%;
+    margin: 1rem 2rem 1rem 0;
+    padding: 0 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cart_item_info_header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cart_item_info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart_item_info {
+    font-size: 20px;
+    text-align: center;
+}
+
+.cart_item_quantity_container {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100% ;
+}
+
+.update_quantity_button {
+    font-weight: bold;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    width: 30%;
+    text-align: center;
+    height:fit-content;
+    margin-bottom: 5px;
+    border:none;
+}
+
+.update_quantity_button:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 8px;
+}
+
+.checkout_info{
+    all: unset;
+    font-size: 20px;
+    width: 25%;
+}
+
+.place_order{
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.checkout_info_header{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.empty_cart {
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 1rem 0 1rem 3rem;
+    padding: 2%;
+}
+
+.account_content{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+    margin: auto;
+    margin: 2% auto;
+    padding-top: 1%;
+    padding: 1% 2% 1% 2%;
+}
+
+.account_content_header{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.account_content_info{
+    font-size: 20px; 
+    margin-bottom: 0;
+}
+
+.account_content_info_header{
+    font-size: 20px; 
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.account_content_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.admin_content_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.admin_content_container a {
+    text-decoration: none;
+}
+
+.admin_button{
+    box-shadow: 0 2px 1px black;
+    font-size: 30px!important;
+    padding: 1rem 2rem!important;
+}
+
+.order_content_container_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.account_content_item{
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display:flex; 
+    flex-direction:column;
+}
+
+.order_item{
+    all: unset;
+    padding: 1%;
+    margin-bottom: 1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display:flex; 
+    flex-direction:column;
+}
+
+.order_item:hover{
+    color: initial;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 8px;
+}
+
+.account_header_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.account_content_item_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.edit_icon{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.edit_icon:hover{
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.cancel_icon{
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.cancel_icon:hover{
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.change_password {
+    flex-direction: column;
+}
+
+.order_content{
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 2% auto;
+    padding-bottom: 2%;
+}
+
+.order_header{
+    padding-top: 2%;
+    margin: 0 2%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.order_info {
+    margin: 0 2% 1%;
+    font-size: 20px;
+}
+
+.order_content_container{
+    margin: 0 3% 0 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order_container_item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.order_container_item2 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.order_container_header{
+    padding-top: 2%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.order_container_info{
+    font-size: 20px;
+    margin: 0 0 1%;
+}
+
+.shop_content_header{
+    margin: 1rem 0 0.5rem 2rem;
+}
+
+.add_product{
+    margin: 1rem;
+    width: 80%;
+}
+
+.user_entry{
+    width: 90%;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+}
+
+.user_entry:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.user_entry_container{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 1% 1% 0 1%;
+
+}
+
+.user_entry_container h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.user_entry_container p{
+    font-size: 20px;
+}
+
+.add_user_form{
+    height: 93.3vh;
+    overflow: auto;
+}

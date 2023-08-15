@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Poster Palace</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles.scss">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d52da0a142.js" crossorigin="anonymous"></script>
+	<style>
+		a:visited{color:blue;}
+		em {font-size:12px;}
+		@viewport {
+			width: device-width ;
+			zoom: 1.0 ;
+		}
+		body { background-color: cornsilk ;}
+	</style>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<div class="container-fluid ms-5 me-5">
+		  <a class="navbar-brand" href="login.html">Poster Paradise</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="mynavbar">
+			<ul class="navbar-nav me-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="login.html">User Login</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</head>
+<body>
+	  <section>
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="col-sm-6 text-black">
+
+			  <div class="d-flex align-items-center h-custom-1 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+
+				<form action="http://localhost:8080/adminsignin" method="POST" style="width: 23rem;">
+
+				  <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
+				  <div style='color: red; margin-bottom:1.5rem'></div>
+
+				  <div class="form-outline mb-4">
+					<input autofocus type="text" id="username" name="username" class="form-control form-control-lg" placeholder="Username"/>
+				  </div>
+
+				  <div class="form-outline mb-4">
+					<input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Password"/>
+				  </div>
+
+				  <div class="pt-1 mb-4">
+					<button class="btn btn-info btn-lg btn-block" type="submit">Login</button></a>
+				  </div>
+				</form>
+
+			  </div>
+
+			</div>
+			<div class="col-sm-6 px-0 d-none d-sm-block">
+				<img src="product_images/wallpaper0.jpg"
+				  alt="Login image" class="w-100" style="object-fit: cover; object-position: left; max-height:93.3vh;">
+			</div>
+		  </div>
+		</div>
+	  </section>
+</body>
+</html>

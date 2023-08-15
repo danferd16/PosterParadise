@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Website to sell posters"
+        />
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles.scss">
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d52da0a142.js" crossorigin="anonymous"></script>
+        <title>Poster Paradise</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container-fluid ms-5 me-5">
+            <a class="navbar-brand" href="/home">Poster Paradise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cart">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop">Shop</a>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link" href="/logout">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/wallpaper1.jpg" alt="Design 1" class="d-block w-100">
+            <div class="carousel-caption">
+              <h3>Welcome to Poster Paradise</h3>
+              <p>Find the highest quality posters that will liven up your room!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/wallpaper2.jpg" alt="Desing 2" class="d-block w-100">
+            <div class="carousel-caption">
+              <h3>We have something for everyone!</h3>
+              <p>We have posters for Animes/Games/Movies anything you need</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/wallpaper3.jpg" alt="Design 3" class="d-block w-100">
+            <div class="carousel-caption">
+              <h3>Low Prices</h3>
+              <p>The cheapest Prices You'll Find for Quality like this!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+    </body>
+</html>

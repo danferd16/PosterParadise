@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Poster Palace</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    a:visited{color:blue;}
+    em {font-size:12px;}
+    @viewport {
+      width: device-width ;
+      zoom: 1.0 ;
+    }
+    body { background-color: cornsilk ;}
+	h3, h2 {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+	}
+  </style>
+
+    	<table border = "1" style = "width: 75%; text-align: center; margin-left: auto; margin-right: auto">
+		<tr bgcolor="salmon">
+			<th colspan="3">
+				<h3>Poster Palace Inventory Management</h3>
+			</th>
+			<!--<th> <a href = "login.html"> Login </a> </th>-->
+		</tr>
+		<tr>
+			<th bgcolor="lavender" width="25%">
+				<a href = "/adminitems"> Modify Items </a>
+			</th>
+			<th bgcolor = "honeydew" width="25%">
+				<a href = "/adminhome"> Back to Main </a>
+			</th>
+			<th bgcolor = "mistyrose" width="25%">
+				<a href = "/adminorders"> View Orders </a>
+			</th>
+		</tr>
+	</table>
+</head>
+<body>
+
+<div class="container">
+<br>
+  <h2>Posters List</h2>
+  <table border="1" style="margin-left:auto; margin-right:auto; width: 80%; text-align: center">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Genre</th>
+    <th>Price</th>
+    <th>Image</th>
+	<th>Delete</th>
+  </tr>
+  <% posters.forEach(function(poster) { %>
+  <tr>
+    <td><%= poster.id %></td>
+    <td><%= poster.name %></td>
+    <td><%= poster.genre %></td>
+    <td><%= poster.price %></td>
+    <td><img src="<%= poster.image %>" width="100"></img></td>
+	<td>
+      <button onclick="deletePoster(<%= poster.id %>)">Remove Poster</button>
+    </td>
+  </tr>
+  <% }); %>
+</table>
+<script>
+function deletePoster(id) {
+  $.ajax({
+    url: `/deleteposter/${id}`,
+    type: 'DELETE',
+    success: function(result) {
+      console.log(result);
+      location.reload();
+    }
+  });
+}
+</script>
+</div>
+<br>
+<div class="container">
+  <h2>Insert Poster</h2>
+<form action="/addposter" method="POST" class="was-validated">
+    <div class="row">
+      <label class="control-label col-sm-2" for="name">Name: </label>
+	  
+      <div class = "col">
+	  <input type="text" class="form-control" id="name" 
+             placeholder="Enter a valid name" name="name" required>
+    </div>
+	</div>
+<br>	
+    <div class="row">
+      <label class="control-label col-sm-2" for="genre">Genre: </label>
+	  
+      <div class = "col">
+	  <input type="text" class="form-control" id="genre" 
+             placeholder="Enter a valid genre" name="genre" required>
+    </div>
+	</div>
+	<br>
+	    <div class="row">
+      <label class="control-label col-sm-2" for="price">Price: </label>
+	  
+      <div class = "col">
+	  <input type="text" class="form-control" id="price" 
+             name="price" required>
+    </div>
+	</div>
+	<br>
+	    <div class="row">
+      <label class="control-label col-sm-2" for="image">Image: </label>
+	  
+      <div class = "col">
+	  <input type="text" class="form-control" id="image" 
+             placeholder="Use /'imagename.extension'" name="image" required>
+    </div>
+	</div>
+	<br>
+		<label class="control-label"></label>
+		<button type="submit" class="btn btn-success">Add Poster</button>
+
+  </form>
+  </div>
+</body>
+</html>
